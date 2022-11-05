@@ -153,19 +153,37 @@ a {
 
 /* Герой */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   left: -7px;
   top: 86px;
-  background-color: var(--background-color1);
+
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--white);
+}
+.overlay {
+  margin-right: auto;
+  margin-left: auto;
+  height: 600px;
+  max-width: 1600px;
+  background-image: linear-gradient(
+    to right, 
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ),
+  url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--background-color1);
+
 }
 
 .hero-title {
   margin-top: 0px;
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 200px;
 
   font-weight: 900;
   font-size: 44px;
@@ -189,17 +207,23 @@ a {
   padding-top: 94px;
 }
 
+
 .features-list {
   display: flex;
 }
 
 .features-list .item {
   width: 270px;
-}
-
-.features-list .item {
   margin-right: 30px;
 }
+.features-list .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background: #F5F4FA;
+  border-radius: 4px;
+}
+
 
 .features-list .item:last-child {
   margin-right: 0px;
@@ -207,6 +231,7 @@ a {
 
 .features-title {
   margin: 0;
+  padding-top: 30px;
   padding-bottom: 10px;
 
   font-weight: 700;
