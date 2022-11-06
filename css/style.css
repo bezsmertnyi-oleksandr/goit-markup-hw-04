@@ -120,12 +120,16 @@ a {
 .header-tel-link:hover,
 .header-tel-link:focus {
   color: var(--accent-color);
+
 }
 
 .header-mail-link:hover,
 .header-mail-link:focus {
   color: var(--accent-color);
+
 }
+
+
 
 .header-mail-link {
   display: flex;
@@ -154,8 +158,10 @@ a {
 }
 
 .contact-icon {
-  fill: #757575;
+
   margin-right: 10px;
+  fill: #757575;
+  stroke: currentColor;
 }
 
 .contact-icon:hover {
